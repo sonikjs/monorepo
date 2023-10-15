@@ -12,4 +12,4 @@ const b = () =>
     format: 'cjs',
   })
 
-Promise.all([b()])
+Promise.all([b(), console.log('Build done.')])
