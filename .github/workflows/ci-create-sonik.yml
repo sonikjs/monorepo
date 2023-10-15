@@ -1,19 +1,19 @@
-name: ci-create-hono
+name: ci-create-sonik
 on:
   push:
     branches: [main]
     paths:
-      - 'packages/create-hono/**'
+      - 'packages/create-sonik/**'
   pull_request:
     branches: ['*']
     paths:
-      - 'packages/create-hono/**'
+      - 'packages/create-sonik/**'
 jobs:
   ci:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/create-hono
+        working-directory: ./packages/create-sonik
     strategy:
       matrix:
         node-version: [18.x, 19.x, 20.x]
