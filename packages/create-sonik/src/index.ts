@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import degit from 'degit'
 import { bold, gray, green } from 'kleur/colors'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import prompts from 'prompts'
 import yargsParser from 'yargs-parser'
 import { version } from '../package.json'
