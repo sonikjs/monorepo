@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from 'fs'
 import * as path from 'path'
 import { afterCreateHook } from '../hook'
 
-const PROJECT_NAME = '%%PROJECT_NAME%%'
+const PROJECT_NAME = new RegExp(/%%PROJECT_NAME_.+%%/g)
 
 afterCreateHook.addHook('api', ({ projectName, directoryPath }) => {
   const wranglerPath = path.join(directoryPath, 'wrangler.toml')

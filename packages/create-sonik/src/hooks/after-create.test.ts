@@ -9,9 +9,9 @@ describe('afterCreateHook', () => {
         readFileSync: vi.fn().mockImplementation((filePath) => {
           switch (filePath) {
             case path.join('/path/to/test/directory', 'wrangler.toml'):
-              return 'name = "%%PROJECT_NAME%%"'
+              return 'name = "%%PROJECT_NAME_A%%"'
             case path.join('/path/to/test/directory', 'package.json'):
-              return '{"name": "%%PROJECT_NAME%%"}'
+              return '{"name": "%%PROJECT_NAME_A%%"}'
             default:
               throw new Error(`File not found: ${filePath}`)
           }
