@@ -1,5 +1,11 @@
 # create-sonik
 
+## 0.1.3
+
+### Patch Changes
+
+- [#13](https://github.com/sonikjs/monorepo/pull/13) [`4bef150`](https://github.com/sonikjs/monorepo/commit/4bef1507e3fcd5c39ff61b4d22d3e4242dafc2fd) Thanks [@yusukebe](https://github.com/yusukebe)! - fix a project name bug
+
 ## 0.1.2
 
 ### Patch Changes
